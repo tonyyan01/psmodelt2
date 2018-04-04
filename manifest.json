@@ -1,0 +1,37 @@
+{
+   “commerceSuiteVersion”: “6.5.0.7",
+   “extensions”: [
+       “optcustomerfacade”,
+       “yacceleratorstorefront”,
+       “backoffice”,
+       “platformbackoffice”,
+       “electronicsstore”,
+       “yacceleratorfulfilmentprocess”
+   ],
+   “storefrontAddons” : [
+       {
+           “storefront”: “yacceleratorstorefront”,
+           “template”: “yacceleratorstorefront”
+       },
+       {
+           “storefront”: “yacceleratorstorefront”,
+           “template”: “yacceleratorstorefront”
+       }
+   ],
+   
+   “storeFrontExtension”: “yacceleratorstorefront”,
+   “storeFrontWebRoot”: “/yacceleratorstorefront”,
+   "properties": [
+        {
+            "key": "test.property.1",
+            "value": "test.property.1.value"
+        },
+        {
+            "key": "test.property.2",
+            "value": "test.property.2.value"
+        }
+    ],
+   “project”: “ps1”,
+   “recipe”: “pipeline_b2c_dockerized”,
+   “resultingImageVersion”: “ps1”
+}
