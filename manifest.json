@@ -22,7 +22,10 @@
             "key": "test.property.2",
             "value": "test.property.2.value"
         }
-    ],    
+    ],
+   "project": "ps1b",
+   "recipe": "pipeline_b2c_dockerized",
+   "resultingImageVersion": "ps1b"    
     "aspects": [
         {
             "name": "backgroundProcessing",
@@ -60,8 +63,5 @@
             ]
         }        
     ]
-   "project": "ps1",
-   "recipe": "pipeline_b2c_dockerized",
-   "resultingImageVersion": "ps1"
 }
 
