@@ -6,7 +6,10 @@
        "backoffice",
        "platformbackoffice",
        "electronicsstore",
+       "basecommercebackoffice",       
        "yacceleratorfulfilmentprocess"
+       "solrfacetsearchbackoffice",
+       "commerceservicesbackoffice",
    ],
    "storeFrontExtension": "yacceleratorstorefront",
    "storeFrontWebRoot": "/yacceleratorstorefront",
@@ -19,8 +22,46 @@
             "key": "test.property.2",
             "value": "test.property.2.value"
         }
-    ],
+    ],    
+    "aspects": [
+        {
+            "name": "backgroundProcessing",
+            "properties": [
+                {
+                    "key": "cluster.node.groups",
+                    "value": "backgroundProcessing"
+                }              
+            ]
+        },
+        {
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "acc.test.property.1",
+                    "value": "acc.1.value"
+                },
+                {
+                    "key": "acc.test.property.2",
+                    "value": "acc.2.value"
+                }                
+            ]
+        },
+        {
+            "name": "admin",
+            "properties": [
+                {
+                    "key": "adm.test.property.1",
+                    "value": "adm.1.value"
+                },
+                {
+                    "key": "adm.test.property.2",
+                    "value": "adm.2.value"
+                }                
+            ]
+        }        
+    ]
    "project": "ps1",
    "recipe": "pipeline_b2c_dockerized",
    "resultingImageVersion": "ps1"
 }
+
