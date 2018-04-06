@@ -9,7 +9,7 @@
        "basecommercebackoffice",       
        "yacceleratorfulfilmentprocess"
        "solrfacetsearchbackoffice",
-       "commerceservicesbackoffice",
+       "commerceservicesbackoffice"
    ],
    "storeFrontExtension": "yacceleratorstorefront",
    "storeFrontWebRoot": "/yacceleratorstorefront",
