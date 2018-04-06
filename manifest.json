@@ -8,17 +8,6 @@
        "electronicsstore",
        "yacceleratorfulfilmentprocess"
    ],
-   "storefrontAddons" : [
-       {
-           "storefront": "yacceleratorstorefront",
-           "template": "yacceleratorstorefront"
-       },
-       {
-           "storefront": "yacceleratorstorefront",
-           "template": "yacceleratorstorefront"
-       }
-   ],
-   
    "storeFrontExtension": "yacceleratorstorefront",
    "storeFrontWebRoot": "/yacceleratorstorefront",
    "properties": [
