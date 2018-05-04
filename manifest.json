@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "6.5.0.7",
+   "commerceSuiteVersion": "6.6.0.3",
    "extensions": [
        "optcustomerfacade",
        "yacceleratorstorefront",
@@ -23,45 +23,64 @@
             "value": "test.property.2.value"
         }
     ],
-   "project": "ps1b",
+   "project": "ps_cc2v1",
    "recipe": "pipeline_b2c_dockerized",
-   "resultingImageVersion": "ps1b",    
+   "resultingImageVersion": "ps_cc2v1",    
    "aspects": [
-        {
-            "name": "backgroundProcessing",
-            "properties": [
+         {
+            "name": "backoffice",
+            "properties": [],
+            "webapps": [
                 {
-                    "key": "cluster.node.groups",
-                    "value": "backgroundProcessing"
-                }              
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": "/"
+                }
             ]
         },
         {
             "name": "accstorefront",
-            "properties": [
+            "properties": [],
+            "webapps": [
                 {
-                    "key": "acc.test.property.1",
-                    "value": "acc.1.value"
+                    "name": "hac",
+                    "contextPath": "/hac"
                 },
                 {
-                    "key": "acc.test.property.2",
-                    "value": "acc.2.value"
-                }                
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/"
+                }
             ]
         },
         {
-            "name": "admin",
-            "properties": [
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
                 {
-                    "key": "adm.test.property.1",
-                    "value": "adm.1.value"
+                    "name": "hac",
+                    "contextPath": "/hac"
                 },
                 {
-                    "key": "adm.test.property.2",
-                    "value": "adm.2.value"
-                }                
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/"
+                }
             ]
-        }        
+        }
     ]
 }
 
