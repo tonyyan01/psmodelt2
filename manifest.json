@@ -62,24 +62,6 @@
                     "contextPath": "/"
                 }
             ]
-        },
-        {
-            "name": "backgroundProcessing",
-            "properties": [],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "yacceleratorstorefront",
-                    "contextPath": "/"
-                }
-            ]
         }
     ]
 }
