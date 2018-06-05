@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "6.6.0.3",
+   "commerceSuiteVersion": "6.7.0.1",
    "extensions": [
        "optcustomerfacade",
        "yacceleratorstorefront",
@@ -60,7 +60,44 @@
                 {
                     "name": "yacceleratorstorefront",
                     "contextPath": "/"
+                },
+                {
+                    "key": "regioncache.queryregion.evictionpolicy",
+                    "value": "LRU"
                 }
+            ]
+        },
+       {
+            "name": "backgroundProcessing",
+            "properties": [
+                {
+                    "key": "cluster.node.groups",
+                    "value": "backgroundProcessing"
+                },
+                {
+                    "key": "task.workers.max",
+                    "value": "40"
+                },
+                {
+                    "key": "impex.import.workers",
+                    "value": "8"
+                },
+                {
+                    "key": "catalog.sync.workers",
+                    "value": "8"
+                },
+                {
+                    "key": "task.polling.interval",
+                    "value": "1"
+                },
+                {
+                    "key": "processengine.process.canjoinpreviousnode.default",
+                    "value": "true"
+                },
+                {
+                    "key": "yacceleratorfulfilmentprocess.fraud.scoreLimit",
+                    "value": "10000"
+                }                  
             ]
         }
     ]
