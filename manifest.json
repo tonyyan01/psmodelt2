@@ -41,13 +41,18 @@
                 },
                 {
                     "name": "backoffice",
-                    "contextPath": "/"
+                    "contextPath": "/backoffice/"
                 }
             ]
         },
         {
             "name": "accstorefront",
-            "properties": [],
+            "properties": [
+               {
+                    "key": "regioncache.queryregion.evictionpolicy",
+                    "value": "LRU"
+                }
+            ],
             "webapps": [
                 {
                     "name": "hac",
@@ -59,11 +64,7 @@
                 },
                 {
                     "name": "yacceleratorstorefront",
-                    "contextPath": "/"
-                },
-                {
-                    "key": "regioncache.queryregion.evictionpolicy",
-                    "value": "LRU"
+                    "contextPath": "/backoffice/"
                 }
             ]
         },
@@ -98,6 +99,20 @@
                     "key": "yacceleratorfulfilmentprocess.fraud.scoreLimit",
                     "value": "10000"
                 }                  
+            ],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/backoffice/"
+                }
             ]
         }
     ]
