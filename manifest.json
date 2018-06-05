@@ -41,7 +41,7 @@
                 },
                 {
                     "name": "backoffice",
-                    "contextPath": "/backoffice/"
+                    "contextPath": "/backoffice"
                 }
             ]
         },
@@ -64,7 +64,7 @@
                 },
                 {
                     "name": "yacceleratorstorefront",
-                    "contextPath": "/backoffice/"
+                    "contextPath": "/backoffice"
                 }
             ]
         },
@@ -111,7 +111,7 @@
                 },
                 {
                     "name": "yacceleratorstorefront",
-                    "contextPath": "/backoffice/"
+                    "contextPath": "/backoffice"
                 }
             ]
         }
