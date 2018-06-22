@@ -66,8 +66,24 @@
         },
         {
             "key": "test.property.2",
-            "value": "cc.v2.bn.4.md"
+            "value": "global"
+        },
+        {
+            "key": "test.property.3",
+            "value": "persona.development",
+            "persona": "development"
+        },
+        {
+            "key": "test.property.4",
+            "value": "persona.staging",
+            "persona": "staging"
+        },
+        {
+            "key": "test.property.5",
+            "value": "persona.production",
+            "persona": "production"
         }
+        
     ],
    "aspects": [
          {
