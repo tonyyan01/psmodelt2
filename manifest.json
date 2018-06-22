@@ -59,8 +59,6 @@
        "assistedservicepromotionaddon",
        "pcmbackofficesamplesaddon"
    ],
-   "storeFrontExtension": "yacceleratorstorefront",
-   "storeFrontWebRoot": "/yacceleratorstorefront",
    "properties": [
         {
             "key": "test.property.1",
@@ -71,9 +69,6 @@
             "value": "cc.v2.bn.4.md"
         }
     ],
-   "project": "ps_cc2v1",
-   "recipe": "pipeline_b2c_dockerized",
-   "resultingImageVersion": "ps_cc2v1",    
    "aspects": [
          {
             "name": "backoffice",
