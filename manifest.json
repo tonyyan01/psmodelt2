@@ -123,7 +123,7 @@
                 },
                 {
                     "name": "yacceleratorstorefront",
-                    "contextPath": "/"
+                    "contextPath": ""
                 }
             ]
         },
