@@ -82,8 +82,11 @@
             "key": "test.property.5",
             "value": "persona.production",
             "persona": "production"
-        }
-        
+        },
+        {
+     	 "key":"hac.webroot",
+     	 "value":"/hac"
+    	}
     ],
    "aspects": [
          {
