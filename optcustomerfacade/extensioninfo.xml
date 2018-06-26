@@ -20,6 +20,6 @@
       <requires-extension name="commercefacades"/>
 
       <coremodule generated="true" manager="de.hybris.support.jalo.OptcustomerfacadeManager" packageroot="de.hybris.support"/>
-      <webmodule jspcompile="false" webroot="/optcustomerfacade"/>
+      <webmodule jspcompile="false" webroot="/"/>
    </extension>
 </extensioninfo>
