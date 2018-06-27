@@ -1,0 +1,15 @@
+INSERT_UPDATE AdvancedTypeExportConfiguration;code[unique=true];catalogVersionsToExport(catalog(id),version);languages(isocode);typesToExport(code);blacklistedTypes(code);
+;export-CMS-Staged;apparel-ukContentCatalog:Staged;en;CMSSite,AbstractCMSComponent,PageTemplate, ContentSlot, ContentSlotForTemplate, ContentSlotForPage, AbstractPage, Media, MediaContainer, AbstractRestriction, CMSNavigationNode;CatalogVersionSyncScheduleMedia,HeaderLibrary,LogFile,ImpExMedia
+#;export-Product-Staged;apparel-ukProductCatalog:Staged;en;Product,Category, Media, MediaContainer, PriceRow, TaxRow, DiscountRow, Keyword;CatalogVersionSyncScheduleMedia,HeaderLibrary,LogFile,ImpExMedia
+#;export-hyend2;;en;Hyend2IndexSchema,Hyend2IndexElement,Hyend2EndecaAttributeConfiguration, Hyend2EndecaDimensionConfiguration, Hyend2CasEacConfiguration,Hyend2Property,Hyend2Dimension;CatalogVersionSyncScheduleMedia,HeaderLibrary,LogFile,ImpExMedia
+
+# Blacklisted attributes
+INSERT_UPDATE AdvancedTypeExportConfiguration;code[unique=true];blacklistedAttributes(enclosingType(code),qualifier);
+;export-CMS-Staged;Item:creationtime,Item:modifiedtime,Item:assignedCockpitItemTemplates,Item:comments,Item:owner, Item:allDocuments, Item:savedValues,Media:URL,Media:URL2,Media:folder,PageTemplate:availableContentSlots,FooterComponent:navigationNodes,,AbstractPage:navigationNodeList
+#;export-Product-Staged;Item:creationtime,Item:modifiedtime,Item:assignedCockpitItemTemplates,Item:comments,ExtensibleItem:owner, Item:allDocuments, Item:savedValues, Media:URL,Media:URL2,Media:folder,Product:europe1Prices, Product:europe1Taxes, Product:europe1Discounts
+#;export-hyend2;Item:creationtime,Item:modifiedtime,Item:assignedCockpitItemTemplates,Item:comments,ExtensibleItem:owner, Item:allDocuments, Item:savedValues
+
+INSERT_UPDATE AdvancedTypeExportCronJob;code[unique=true];job(code);exportConfiguration(code);sessionLanguage(isocode)
+;export-CMS-Staged;advancedTypeExportJob;export-CMS-Staged;en;
+#;export-Product-Staged;advancedTypeExportJob;export-Product-Staged;en;
+#;export-hyend2;advancedTypeExportJob;export-hyend2;en;

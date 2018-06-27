@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2011 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+
+  
+-->
+<!--
+	ATTENTION: This is just an example file. You have to edit it according to your needs.
+-->
+<items 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:noNamespaceSchemaLocation="items.xsd">
+
+	<relations>
+	<relation code="AdvancedTypeExportConfig2Types" autocreate="true"
+		generate="true" localized="false">
+		<deployment table="AdvExportConfig2Types"
+			typecode="31000" />
+		<sourceElement qualifier="exportConfigurations"
+			type="AdvancedTypeExportConfiguration" cardinality="many" ordered="false">
+			<description>type export configs</description>
+		</sourceElement>
+		<targetElement qualifier="typesToExport" type="ComposedType"
+			cardinality="many" ordered="true" collectiontype="list">
+			<description>composed types that we will export</description>
+		</targetElement>
+	</relation>
+	<relation code="AdvancedTypeExportConfig2CatVersion"
+		autocreate="true" generate="true" localized="false">
+		<deployment table="AdvExConfig2CatVersion"
+			typecode="31001" />
+		<sourceElement qualifier="exportConfigurations"
+			type="AdvancedTypeExportConfiguration" cardinality="many" ordered="false">
+			<description>type export configs</description>
+		</sourceElement>
+		<targetElement qualifier="catalogVersionsToExport" type="CatalogVersion"
+			cardinality="many" ordered="false" collectiontype="set">
+			<description>catalog versions to export</description>
+		</targetElement>
+	</relation>
+	
+	<relation code="AdvancedTypeExportConfig2Lang"
+		autocreate="true" generate="true" localized="false">
+		<deployment table="AdvExConfig2Lang"
+			typecode="31002" />
+		<sourceElement qualifier="exportConfigurations" type="AdvancedTypeExportConfiguration" cardinality="many" ordered="false">
+			<description>type export configs</description>
+		</sourceElement>
+		<targetElement qualifier="languages" type="Language"
+			cardinality="many" ordered="false" collectiontype="set">
+			<description>languages to export</description>
+		</targetElement>
+	</relation>
+	<relation code="AdvancedTypeExportConfig2BlackListedAttrDesc"
+		autocreate="true" generate="true" localized="false">
+		<deployment table="AdvExConfig2BlkAttrDesc"
+			typecode="21003" />
+		<sourceElement qualifier="blackListedExportConfigurations" type="AdvancedTypeExportConfiguration" cardinality="many" ordered="false">
+			<description>type export configs</description>
+		</sourceElement>
+		<targetElement qualifier="blacklistedAttributes" type="AttributeDescriptor"
+			cardinality="many" ordered="true" collectiontype="set">
+			<description>languages to export</description>
+		</targetElement>
+	</relation>
+	<relation code="AdvancedTypeExportConfig2BlacklistedTypes"
+		autocreate="true" generate="true" localized="false">
+		<deployment table="AdvExConfig2BlkTypes"
+			typecode="31005" />
+		<sourceElement qualifier="blackListedExportConfigurations" type="AdvancedTypeExportConfiguration" cardinality="many" ordered="false">
+			<description>type export configs</description>
+		</sourceElement>
+		<targetElement qualifier="blacklistedTypes" type="ComposedType"
+			cardinality="many" ordered="true" collectiontype="set">
+			<description>languages to export</description>
+		</targetElement>
+	</relation>
+</relations>
+	<itemtypes>
+		<itemtype code="AdvancedTypeExportCronJob" extends="CronJob" jaloclass="de.hybris.advancedexport.jalo.AdvancedTypeExportCronJob" autocreate="true" generate="true">
+		<attributes>
+			<attribute qualifier="exportScript" type="ImpExMedia">
+				 <persistence type="property"/>
+			</attribute>
+			<attribute qualifier="exportedMedia" type="ImpExMedia">
+				 <persistence type="property"/>
+			</attribute>
+			<attribute qualifier="exportedData" type="ImpExMedia">
+				 <persistence type="property"/>
+			</attribute>
+			<attribute qualifier="exportConfiguration" type="AdvancedTypeExportConfiguration">
+				 <persistence type="property"/>
+				 <modifiers optional="false"/>
+			</attribute>
+		</attributes>			
+		</itemtype>
+		
+		<itemtype code="AdvancedTypeExportConfiguration" extends="GenericItem" jaloclass="de.hybris.advancedexport.jalo.AdvancedTypeExportConfiguration" autocreate="true" generate="true">
+		<deployment table="AdvExportConfig"
+			typecode="31004" />
+		<attributes>
+			<attribute type="java.lang.String" qualifier="code">
+				<persistence type="property"/>
+				<modifiers unique="true" optional="false"/>
+			</attribute>
+			<attribute type="java.util.Date" qualifier="lastExport">
+				<persistence type="property"/>
+			</attribute>
+			<attribute type="java.lang.Boolean" qualifier="relationsAsAttributes">
+				<persistence type="property"/>
+				<modifiers optional="false"/>
+				<defaultvalue>java.lang.Boolean.TRUE</defaultvalue>
+			</attribute>
+		</attributes>			
+		</itemtype>
+	</itemtypes>	
+</items>
