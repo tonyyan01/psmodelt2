@@ -11,18 +11,34 @@
 --><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
 
 	<extension abstractclassprefix="Generated" classprefix="CustomsiteStorefront" name="customsitestorefront" usemaven="false">		
-        <requires-extension name="personalizationsearchsamplesaddon"/>
-<requires-extension name="pcmbackofficesamplesaddon"/>
-<requires-extension name="multicountrysampledataaddon"/>
+        
+
+<requires-extension name="personalizationsearchsamplesaddon"/>
 <requires-extension name="adaptivesearchsamplesaddon"/>
-<requires-extension name="orderselfserviceaddon"/>
-<requires-extension name="customerticketingaddon"/>
+
+<requires-extension name="pcmbackofficesamplesaddon"/>
 <requires-extension name="assistedservicepromotionaddon"/>
-<requires-extension name="assistedservicestorefront"/>
 <requires-extension name="textfieldconfiguratortemplateaddon"/>
+<requires-extension name="multicountrysampledataaddon"/>
 <requires-extension name="smarteditaddon"/>
 <requires-extension name="promotionenginesamplesaddon"/>
 <requires-extension name="commerceorgsamplesaddon"/>
+<requires-extension name="customerticketingaddon"/>
+<requires-extension name="orderselfserviceaddon"/>
+<requires-extension name="acceleratorwebservicesaddon"/>
+
+
+
+
+
+
+
+
+<requires-extension name="assistedservicestorefront"/>
+
+
+
+
 
 
 
@@ -60,7 +76,7 @@
 <requires-extension name="acceleratorstorefrontcommons"/>
 		<requires-extension name="customsitefacades"/>
 
-		<webmodule jspcompile="false" webroot="/customsitestorefront"/>
+		<webmodule jspcompile="false" webroot="/"/>
 
 		
 		<meta key="extgen-template-extension" value="true"/>
