@@ -1,15 +1,8 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at May 30, 2018 9:18:56 AM                     ---
+ * --- Generated at Jun 28, 2018 11:52:42 AM                    ---
  * ----------------------------------------------------------------
- *  
- * [y] hybris Platform
- * Copyright (c) 2018 SAP SE or an SAP affiliate company. All rights reserved.
- * This software is the confidential and proprietary information of SAP
- * ("Confidential Information"). You shall not disclose such Confidential
- * Information and shall use it only in accordance with the terms of the
- * license agreement you entered into with SAP.
  */
 package org.customsite.core.jalo;
 
@@ -21,13 +14,13 @@ import de.hybris.platform.jalo.SessionContext;
 import de.hybris.platform.jalo.extension.Extension;
 import de.hybris.platform.jalo.type.ComposedType;
 import de.hybris.platform.jalo.type.JaloGenericCreationException;
+import java.util.HashMap;
+import java.util.Map;
 import org.customsite.core.constants.CustomsiteCoreConstants;
 import org.customsite.core.jalo.ApparelProduct;
 import org.customsite.core.jalo.ApparelSizeVariantProduct;
 import org.customsite.core.jalo.ApparelStyleVariantProduct;
 import org.customsite.core.jalo.ElectronicsColorVariantProduct;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Generated class for type <code>CustomsiteCoreManager</code>.
