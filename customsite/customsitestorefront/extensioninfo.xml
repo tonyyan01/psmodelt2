@@ -13,7 +13,7 @@
 	<extension abstractclassprefix="Generated" classprefix="CustomsiteStorefront" name="customsitestorefront" usemaven="false">		
         
 
-<requires-extension name="personalizationsearchsamplesaddon"/>
+
 <requires-extension name="adaptivesearchsamplesaddon"/>
 
 <requires-extension name="pcmbackofficesamplesaddon"/>
