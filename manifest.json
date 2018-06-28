@@ -12,10 +12,6 @@
        "adaptivesearchwebservices",
        "commerceservicesbackoffice",
        "solrfacetsearchbackoffice",
-       "yacceleratorcockpits",
-       "yacceleratorinitialdata",
-       "yacceleratorfulfilmentprocess",
-       "yacceleratorstorefront",
        "ycommercewebservices",
        "ycommercewebservicestest",
        "electronicsstore",
@@ -57,7 +53,15 @@
        "assistedservicestorefront",
        "assistedservicewebservices",
        "assistedservicepromotionaddon",
-       "pcmbackofficesamplesaddon"
+       "pcmbackofficesamplesaddon",
+       "customsitefulfilmentprocess",
+       "customsitefulfilmentprocess",
+       "customsitecockpits",
+       "customsitecore",
+       "customsitefacades",
+       "customsitetest",
+       "customsiteinitialdata",
+       "customsitestorefront"
    ],
    "properties": [
         {
@@ -125,7 +129,7 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "yacceleratorstorefront",
+                    "name": "customsitestorefront",
                     "contextPath": ""
                 }
             ]
@@ -156,11 +160,7 @@
                 {
                     "key": "processengine.process.canjoinpreviousnode.default",
                     "value": "true"
-                },
-                {
-                    "key": "yacceleratorfulfilmentprocess.fraud.scoreLimit",
-                    "value": "10000"
-                }                  
+                }             
             ],
             "webapps": [
                 {
