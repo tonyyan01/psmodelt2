@@ -1,0 +1,10 @@
+#Ant properties
+#Tue Feb 20 12:58:44 GMT 2018
+builddate=20180220 1258
+description=hacfix
+group.id=de.hybris.platform
+module.name=platform-module
+name=hacfix
+vendor=hybris
+version=6.7.0.0
+version.api=6.7.0

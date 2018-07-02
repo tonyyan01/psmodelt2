@@ -47,7 +47,8 @@
        "customsitefacades",
        "customsitetest",
        "customsiteinitialdata",
-       "customsitestorefront"
+       "customsitestorefront",
+	   "hacfix"
    ],
    "properties": [
         {
