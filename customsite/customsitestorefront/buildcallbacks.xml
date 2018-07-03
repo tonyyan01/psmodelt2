@@ -85,6 +85,7 @@
 	<target description="Adds a new responsive theme based on an existing responsive source theme" name="customsitestorefront_responsive_theme_setup">
 		<customsitestorefront_responsive_theme_setup/>
 	</target>
+	
 
 	<macrodef name="customsitestorefront_check_responsive_theme_setup_parameters">
 		<sequential>
@@ -164,7 +165,7 @@
 			</xmltask>
 		</sequential>
 	</macrodef>
-
+	
 	<macrodef name="customsitestorefront_sync_responsive_theme">
 		<attribute name="sourceCode"/>
 		<attribute name="targetCode"/>
@@ -398,9 +399,8 @@
 				</do>
 			</foreachext>
 		</sequential>
-
-
 	</macrodef>
+
 
 
 	<macrodef name="delete_wro_addons_xml">
