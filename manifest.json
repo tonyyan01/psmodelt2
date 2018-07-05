@@ -64,7 +64,9 @@
          "promotionengineatddtests",
          "textfieldconfiguratortemplateatddtests",
 
-         "pcmbackofficesamplesaddon"
+         "pcmbackofficesamplesaddon",
+         
+         "yb2bacceleratorstorefront"
    ],
    "storefrontAddons": [
         {
