@@ -1,7 +1,6 @@
 {
    "commerceSuiteVersion": "6.7.0.1",
    "extensions": [
-       "optcustomerfacade",
        "yacceleratorstorefront",
        "backoffice",
        "platformbackoffice",
@@ -11,8 +10,6 @@
        "solrfacetsearchbackoffice",
        "commerceservicesbackoffice"
    ],
-   "storeFrontExtension": "yacceleratorstorefront",
-   "storeFrontWebRoot": "/yacceleratorstorefront",
    "properties": [
         {
             "key": "test.property.1",
