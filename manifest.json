@@ -13,6 +13,7 @@
          "yacceleratorinitialdata",
          "yacceleratorfulfilmentprocess",
          "ycommercewebservices",
+         "ycommercewebservicestest",
          "orderselfserviceaddon",
 
          "powertoolsstore",
@@ -58,6 +59,10 @@
          "personalizationsearchsmartedit",
          "personalizationsearchweb",
          "personalizationsearchsamplesaddon",
+
+         "assistedserviceatddtests",
+         "promotionengineatddtests",
+         "textfieldconfiguratortemplateatddtests",
 
          "pcmbackofficesamplesaddon",
          
