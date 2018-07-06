@@ -166,6 +166,10 @@
                {
                     "key": "regioncache.queryregion.evictionpolicy",
                     "value": "LRU"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
                 }
             ],
             "webapps": [
@@ -179,7 +183,7 @@
                 },
                 {
                     "name": "yb2bacceleratorstorefront",
-                    "contextPath": "/yb2bacceleratorstorefront"
+                    "contextPath": ""
                 }
             ]
         },
