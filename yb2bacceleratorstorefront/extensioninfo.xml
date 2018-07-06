@@ -11,7 +11,8 @@
 --><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
 
 	<extension abstractclassprefix="Generated" classprefix="Yb2bacceleratorstorefront" name="yb2bacceleratorstorefront" usemaven="false">		
-        <requires-extension name="personalizationsearchsamplesaddon"/>
+        
+
 <requires-extension name="pcmbackofficesamplesaddon"/>
 <requires-extension name="adaptivesearchsamplesaddon"/>
 <requires-extension name="orderselfserviceaddon"/>
