@@ -139,7 +139,11 @@
         {
             "key": "test.property.2",
             "value": "test.property.2.value"
-        }
+        },
+        {
+     	 	"key":"hac.webroot",
+     	 	"value":"/hac"
+    	}
     ],
    "aspects": [
          {
