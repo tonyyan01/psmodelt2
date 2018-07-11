@@ -139,6 +139,10 @@
         {
             "key": "test.property.2",
             "value": "test.property.2.value"
+        },
+        {
+             "name": "hac",
+             "contextPath": "/hac"
         }
     ],
    "aspects": [
