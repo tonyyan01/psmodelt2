@@ -114,11 +114,12 @@
             "addon": "assistedservicestorefront",
             "storefront": "customsitestorefront",
             "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "stocknotificationaddon",
+            "storefront": "customsitestorefront",
+            "template": "yacceleratorstorefront"
         }
-        
-        
-                
-        
     ],
    "properties": [
         {
