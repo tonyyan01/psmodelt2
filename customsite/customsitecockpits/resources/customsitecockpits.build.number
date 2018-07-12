@@ -1,0 +1,11 @@
+#Ant properties
+#Thu Feb 15 17:09:36 UTC 2018
+builddate=20180215 1709
+description=customsitecockpits
+group.id=de.hybris.platform
+module.name=platform-module
+name=customsitecockpits
+releasedate=20180214 1940
+vendor=hybris
+version=6.6.0.0
+version.api=6.6.0
