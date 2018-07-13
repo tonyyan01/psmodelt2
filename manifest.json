@@ -47,7 +47,8 @@
        "customsitetest",
        "customsiteinitialdata",
        "customsitestorefront",
-       "personalizationsearchsamplesaddon"
+       "personalizationsearchsamplesaddon",
+       "optcustomerfacade"
    ],
    "storefrontAddons" : [
         {
