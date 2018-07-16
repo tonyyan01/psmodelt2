@@ -57,7 +57,7 @@ public class OptCustomerFacade extends DefaultCustomerFacade
 	@Override
 	public void loginSuccess()
 	{
-		LOG.debug(">>>>>>>>>>>OptCustomerFacade<<<<<<<<<<<<<");
+		LOG.debug(">>>>>>>>>>>OptCustomerFacade:loginSuccess<<<<<<<<<<<<<");
 		super.loginSuccess();
 		checkCartList();
 	}
@@ -67,6 +67,7 @@ public class OptCustomerFacade extends DefaultCustomerFacade
 	 */
 	private void checkCartList()
 	{
+		LOG.debug(">>>>>>>>>>>OptCustomerFacade:checkCartList<<<<<<<<<<<<<");
 		final boolean readCartsFromDB = Config.getBoolean(READ_CARTS_FROM_DB, false);
 
 		if (readCartsFromDB)
@@ -76,6 +77,7 @@ public class OptCustomerFacade extends DefaultCustomerFacade
 		}
 		else
 		{
+
 			readListOfCarts();
 		}
 	}
@@ -85,6 +87,7 @@ public class OptCustomerFacade extends DefaultCustomerFacade
 	 */
 	private void recalculateCarts()
 	{
+		LOG.debug(">>>>>>>>>>>OptCustomerFacade:recalculateCarts<<<<<<<<<<<<<");
 		final boolean recalculateCarts = Config.getBoolean(RECALCULATE_CART, false);
 		if (recalculateCarts)
 		{
@@ -108,6 +111,7 @@ public class OptCustomerFacade extends DefaultCustomerFacade
 	 */
 	private void readListOfCarts()
 	{
+		LOG.debug(">>>>>>>>>>>OptCustomerFacade:readListOfCarts<<<<<<<<<<<<<");
 		final boolean readCartsFromDB = Config.getBoolean(READ_CARTS_FROM_DB, false);
 
 		final CartModel cartModel = createCartModel();
@@ -149,6 +153,7 @@ public class OptCustomerFacade extends DefaultCustomerFacade
 
 	private void readListOfCartsfs()
 	{
+		LOG.debug(">>>>>>>>>>>OptCustomerFacade:readListOfCartsfs<<<<<<<<<<<<<");
 
 		final FlexibleSearchQuery query = new FlexibleSearchQuery(SELECT_PK_FROM_CART_WHERE_PK_PK);
 		query.addQueryParameter("pk", "8098888880");
