@@ -48,7 +48,15 @@
        "customsiteinitialdata",
        "customsitestorefront",
        "personalizationsearchsamplesaddon",
-       "optcustomerfacade"
+       "optcustomerfacade",
+       "acceleratorservices",
+       "commerceservices",
+       "springintegrationlibs",
+       "commerceservices",
+       "azurecloud",
+       "cloudcommons",
+       "cloudhotfolder",
+         "azurecloudhotfolder"
    ],
    "storefrontAddons" : [
         {
@@ -197,7 +205,7 @@
             "properties": [
                 {
                     "key": "cluster.node.groups",
-                    "value": "backgroundProcessing"
+                    "value": "backgroundProcessing,integration,yHotfolderCandidate"
                 },
                 {
                     "key": "task.workers.max",
