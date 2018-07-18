@@ -56,7 +56,7 @@
        "azurecloud",
        "cloudcommons",
        "cloudhotfolder",
-         "azurecloudhotfolder"
+       "azurecloudhotfolder"
    ],
    "storefrontAddons" : [
         {
